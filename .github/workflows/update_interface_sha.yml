@@ -16,7 +16,7 @@ jobs:
             -X POST \
             -H "Authorization: Bearer $INTERFACE_REPO_TOKEN" \
             -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/H3yfinn/road_model_inputs_interface/actions/workflows/sync_to_hf.yml/dispatches" \
+            "https://api.github.com/repos/leannesargent/road_model_inputs_interface/actions/workflows/sync_to_hf.yml/dispatches" \
             -d '{"ref":"main"}' | tee http_status
           echo ""
           cat response.json
